@@ -1,21 +1,35 @@
+/* General page styling */
 body {
-  font-family: 'Helvetica', sans-serif;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f9fa;
+  background-color: #f9f9f9;
   color: #333;
 }
 
+/* Header bar */
 header {
-  background-color: #004aad;
+  background-color: #0047ba; /* Northeastern-style blue */
   color: white;
+  padding: 25px 0;
   text-align: center;
-  padding: 1em 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Navigation links */
+nav {
+  margin-top: 10px;
 }
 
 nav a {
   color: white;
   text-decoration: none;
+  font-weight: 500;
   margin: 0 10px;
 }
 
@@ -23,21 +37,54 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Main content */
 section {
-  padding: 20px;
-  max-width: 700px;
-  margin: auto;
+  max-width: 800px;
+  margin: 60px auto;
+  text-align: center;
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-img {
+section h2 {
+  color: #222;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+section p {
+  line-height: 1.6;
+  font-size: 1.05rem;
+  margin-bottom: 25px;
+  color: #444;
+}
+
+/* Images */
+section img {
   display: block;
-  margin: 20px auto;
-  border-radius: 8px;
-  width: 60%;
+  margin: 0 auto 20px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
+/* Footer */
 footer {
   text-align: center;
-  padding: 10px;
-  background-color: #eee;
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+footer a {
+  color: #0047ba;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
